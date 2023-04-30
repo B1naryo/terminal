@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>مثال على تأثير المحطة الطرفية</title>
+
+    <style>
+        body {
+           
+      cursor: none;
+    
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+         .locked {
+      pointer-events: none;
+    }
+        #terminal {
+            padding: 20px;
+            white-space: pre-wrap;
+            animation: blink-caret 0.75s steps(1) infinite;
+            overflow: auto;
+            height: 500px;
+            box-sizing: border-box;
+            border: 2px solid green;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: green; }
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+   <script>
+    
+        document.body.classList.add("locked"); 
+        var terminal = document.getElementById("terminal");
+        var text = "Компьютер уязвим..............................................................................................\n";
+text += "Поиск shell-кода................................................\n";
+text += "Найден shell-код!\n";
+text += "Выполнение shell-кода ..................................................................................\n";
+text += "Shell-код успешно выполнен!\n";
+text += "Внедрение полезной нагрузки.......................................................................................\n";
+text += "Полезная нагрузка успешно внедрена!\n";
+text += "Компьютер заражен!\n";
+text += "Ожидание соединения .................................................................................\n";
+text += "Соединение установлено\n";
+text += "Y'mimoq paq-woqoq................................................\n";
+text += "Paq-woqoq gothdak!\n";
+text += "Woqoq paq y'd'upsoq ..................................................................................\n";
+text += "Paq-woqoq y'd'upsoq jahygothdak!\n";
+text += "Y'th'eryssoq x'rataz.......................................................................................\n";
+text += "Y'th'eryssoq x'rataz gothdak!\n";
+text += "B'oquoqol toxvajag!\n";
+text += "Qovigijgg y'vysaqussoq .................................................................................\n";
+text += "Vysaqussoq vyaqatdak\n";
+var speed = 2;
+var i = 0;
+
+        function typeEffect() {
+  var success = false;
+  if (i < text.length) {
+    terminal.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, speed);
+  } else {
+    success = true;
+    setTimeout(function() {
+      if (success) {
+        sessionStorage.setItem("status", "true");
+        window.location.href = "home.html";
+      } else {
+        sessionStorage.setItem("status", "false");
+      }
+    }, 1000);
+  }
+}
+
+
+        typeEffect();
+        gryfjupet();
+
+
+</script>
+  
+
+    <script src="loader.js"></script>
+</body>
+</html>
