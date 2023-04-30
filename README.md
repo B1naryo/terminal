@@ -1,5 +1,5 @@
 # terminal
-Este código foi criado por Sandro Henrique Cerqueira com o objetivo de simular um terminal que verifica a presença de softwares vulneráveis a ameaças de exploit, como softwares vulneráveis a stack overflow ou buffer overflow, no computador do usuário. A ideia é fornecer uma experiência de simulação que possa assustar o usuário, mostrando que se trata de um malware avançado.
+Este código foi criado por Sandro Henrique Cerqueira com o objetivo de simular um terminal que verifica a presença de softwares vulneráveis a ameaças de exploit, como softwares vulneráveis a stack overflow ou buffer overflow, no computador do usuário. A ideia é fornecer uma experiência de simulação que possa assustar o usuário, mostrando que se trata de um scanner e de um malware avançado.
 
 Surgiu em minha mente a ideia de criar esse código para impedir que meus projetos fossem clonados. Embora eu saiba que seja impossível evitar a clonagem de um projeto, se algum oportunista tentar clonar meus projetos, isso será motivo de piada, mesmo que ele tenha sucesso. Enfim, o projeto é apenas uma brincadeira infantil que surgiu em minha mente.
 
